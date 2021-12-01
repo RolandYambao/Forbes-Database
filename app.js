@@ -139,13 +139,91 @@ money.create({
 
 // Leadership 1
 leadership.create({
-    title: 'Stocks Plunge Again After CDC Confirms First U.S. Case Of Omicron Variant',
-    author: 'Sergei Klebnikov',
-    date: 'December 1, 2021',
+    title: 'Forbes Under 30 Hall of Fame',
+    author: 'Maneet Ahuja',
+    date: 'December 2021',
     job: 'Forbes Staff',
 })
     .then(function (createdLeadership) {
         console.log('Leadership Article #1', createdLeadership);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Leadership Article', error);
+    });
+// Leadership 2
+leadership.create({
+    title: 'Why Jack Dorsey’s Total Exit From Twitter Is Unusual—And Welcome',
+    author: 'Jena McGregor',
+    date: 'November 30, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdLeadership) {
+        console.log('Leadership Article #2', createdLeadership);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Leadership Article', error);
+    });
+// Leadership 3
+leadership.create({
+    title: 'Spotify Has Plans To Move Beyond Music And Become The Instagram And TikTok Of Audio',
+    author: 'Steven Bertoni',
+    date: 'November 29, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdLeadership) {
+        console.log('Leadership Article #3', createdLeadership);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Leadership Article', error);
+    });
+// Leadership 4
+leadership.create({
+    title: 'Chobani Is Going Public. Its ‘Anti-CEO’ Founder Won’t Be The Only Employee Who Could See A Big Payday',
+    author: 'Jena McGregor',
+    date: 'November 19, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdLeadership) {
+        console.log('Leadership Article #4', createdLeadership);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Leadership Article', error);
+    });
+// Leadership 5
+leadership.create({
+    title: 'Ray Dalio Says America’s Decline Will Upend Lives, Not Just Portfolios',
+    author: 'Maneet Ahuja',
+    date: 'November 29, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdLeadership) {
+        console.log('Leadership Article #5', createdLeadership);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Leadership Article', error);
+    });
+// Leadership 6
+leadership.create({
+    title: 'Women, Blacks And Hispanics Find Uptick In New Jobs Through Coursera’s Upskilling, Degree Programs',
+    author: 'Jack Kelly',
+    date: 'December 1, 2021',
+    job: 'Senior Contributor',
+})
+    .then(function (createdLeadership) {
+        console.log('Leadership Article #6', createdLeadership);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Leadership Article', error);
+    });
+// Leadership 7
+leadership.create({
+    title: 'Stacey Abrams Announces Second Run For Georgia Governor',
+    author: 'Derek Saul',
+    date: 'December 1, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdLeadership) {
+        console.log('Leadership Article #7', createdLeadership);
     })
     .catch(function (err) {
         console.log('ERROR with adding new Leadership Article', error);
