@@ -228,6 +228,45 @@ leadership.create({
     .catch(function (err) {
         console.log('ERROR with adding new Leadership Article', error);
     });
+// Leadership 8
+leadership.create({
+    title: 'Elon Musk Shares Bizarre Stalin Meme Commemorating Twitter CEO Change',
+    author: 'Derek Saul',
+    date: 'December 1, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdLeadership) {
+        console.log('Leadership Article #8', createdLeadership);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Leadership Article', error);
+    });
+// Leadership 9
+leadership.create({
+    title: 'Are You An Equal Parent For Your Kids Or Just A Financial Investor?',
+    author: 'Nabanita De Foundation',
+    date: 'December 1, 2021',
+    job: 'Brand Contributor',
+})
+    .then(function (createdLeadership) {
+        console.log('Leadership Article #9', createdLeadership);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Leadership Article', error);
+    });
+// Leadership 10
+leadership.create({
+    title: 'The Wisdom Of Women Leaders As They Forge The Post Pandemic Future',
+    author: 'Alaina Percival',
+    date: 'December 1, 2021',
+    job: 'Contributor',
+})
+    .then(function (createdLeadership) {
+        console.log('Leadership Article #10', createdLeadership);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Leadership Article', error);
+    });
 /************************************************************/
 // [R]ead
 /************************************************************/
