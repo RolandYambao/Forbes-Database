@@ -267,6 +267,59 @@ leadership.create({
     .catch(function (err) {
         console.log('ERROR with adding new Leadership Article', error);
     });
+
+// Innovation 1
+leadership.create({
+    title: 'Powering Their Way Into The E-Bike Boom',
+    author: 'Alan Ohnsman',
+    date: 'December 1, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdInnovation) {
+        console.log('Innovation Article #1', createdInnovation);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Innovation Article', error);
+    });
+// Innovation 2
+leadership.create({
+    title: 'Meet The Upstarts Leading The Digital Recovery: 30 Under 30 In Enterprise Technology',
+    author: 'Martin Giles and Helen A. S. Popkin',
+    date: 'December 1, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdInnovation) {
+        console.log('Innovation Article #2', createdInnovation);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Innovation Article', error);
+    });
+// Innovation 3
+leadership.create({
+    title: 'Zappos CEO Is Stepping Down, A Year After Tony Hsieh’s Death',
+    author: 'Angel Au-Yeung and David Jeans',
+    date: 'November 30, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdInnovation) {
+        console.log('Innovation Article #3', createdInnovation);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Innovation Article', error);
+    });
+// Innovation 3
+leadership.create({
+    title: 'Zappos CEO Is Stepping Down, A Year After Tony Hsieh’s Death',
+    author: 'Angel Au-Yeung and David Jeans',
+    date: 'November 30, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdInnovation) {
+        console.log('Innovation Article #3', createdInnovation);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Innovation Article', error);
+    });
 /************************************************************/
 // [R]ead
 /************************************************************/
