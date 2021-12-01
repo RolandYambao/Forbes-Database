@@ -14,10 +14,22 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   leadership.init({
-    title: DataTypes.STRING,
-    author: DataTypes.STRING,
-    date: DataTypes.STRING,
-    job: DataTypes.STRING
+    title: {
+      type: DataTypes.STRING,
+      validate: { notEmpty: true }
+    },
+    author: {
+      type: DataTypes.STRING,
+      validate: { notEmpty: true }
+    },
+    date: {
+      type: DataTypes.STRING,
+      validate: { notEmpty: true }
+    },
+    job: {
+      type: DataTypes.STRING,
+      validate: { notEmpty: true }
+    },
   }, {
     sequelize,
     modelName: 'leadership',
