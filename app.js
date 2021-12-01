@@ -136,6 +136,20 @@ money.create({
     .catch(function (err) {
         console.log('ERROR with adding new Money Article', error);
     });
+
+// Leadership 1
+leadership.create({
+    title: 'Stocks Plunge Again After CDC Confirms First U.S. Case Of Omicron Variant',
+    author: 'Sergei Klebnikov',
+    date: 'December 1, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdLeadership) {
+        console.log('Leadership Article #1', createdLeadership);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Leadership Article', error);
+    });
 /************************************************************/
 // [R]ead
 /************************************************************/
