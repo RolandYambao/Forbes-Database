@@ -400,6 +400,57 @@ leadership.create({
     });
 /************************************************************/
 // [R]ead
+// findAll Money
+money.findAll()
+    .then(function (moneyArray) {
+        console.log('ALL MONEY ARTICLES HERE')
+        for (let i = 0; i < moneyArray; i++) {
+            console.log(moneyArray[i])
+        }
+    })
+money.findAll()
+    .then(function (moneyArray) {
+        console.log('ALL MONEY ARTICLES PUBLISHED ON DECEMBER 1, 2021 HERE')
+        for (let i = 0; i < moneyArray; i++) {
+            if (moneyArray[i].date == 'December 1, 2021') {
+                console.log(moneyArray[i])
+            }
+        }
+    })
+// findAll Leadership
+leadership.findAll()
+    .then(function (leadershipArray) {
+        console.log('ALL LEADERSHIP ARTICLES HERE')
+        for (let i = 0; i < leadershipArray; i++) {
+            console.log(leadershipArray[i])
+        }
+    })
+leadership.findAll()
+    .then(function (leadershipArray) {
+        console.log('ALL LEADERSHIP ARTICLES PUBLISHED ON DECEMBER 1, 2021 HERE')
+        for (let i = 0; i < leadershipArray; i++) {
+            if (leadershipArray[i].date == 'December 1, 2021') {
+                console.log(leadershipArray[i])
+            }
+        }
+    })
+// findAll Innovation
+innovation.findAll()
+    .then(function (innovationArray) {
+        console.log('ALL INNOVATION ARTICLES HERE')
+        for (let i = 0; i < innovationArray; i++) {
+            console.log(innovationArray[i])
+        }
+    })
+innovation.findAll()
+    .then(function (innovationArray) {
+        console.log('ALL INNOVATION ARTICLES PUBLISHED ON DECEMBER 1, 2021 HERE')
+        for (let i = 0; i < innovationArray; i++) {
+            if (innovationArray[i].date == 'December 1, 2021') {
+                console.log(innovationArray[i])
+            }
+        }
+    })
 /************************************************************/
 // [U]pdate
 /************************************************************/
