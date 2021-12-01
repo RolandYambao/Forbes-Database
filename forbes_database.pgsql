@@ -1,9 +1,9 @@
 -- CREATE DATABASE forbes_database;
 
 SELECT * FROM money;
-SELECT * FROM leadership;
-SELECT * FROM innovation;
+SELECT * FROM leaderships;
+SELECT * FROM innovations;
 
 -- DELETE FROM money;
--- DELETE FROM leadership;
--- DELETE FROM innovation;
+-- DELETE FROM leaderships;
+-- DELETE FROM innovations;

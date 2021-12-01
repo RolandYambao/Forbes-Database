@@ -14,22 +14,10 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   innovation.init({
-    title: {
-      type: DataTypes.STRING,
-      validate: { notEmpty: true }
-    },
-    author: {
-      type: DataTypes.STRING,
-      validate: { notEmpty: true }
-    },
-    date: {
-      type: DataTypes.STRING,
-      validate: { notEmpty: true }
-    },
-    job: {
-      type: DataTypes.STRING,
-      validate: { notEmpty: true }
-    },
+    title: DataTypes.STRING,
+    author: DataTypes.STRING,
+    date: DataTypes.STRING,
+    job: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'innovation',
