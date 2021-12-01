@@ -307,15 +307,93 @@ leadership.create({
     .catch(function (err) {
         console.log('ERROR with adding new Innovation Article', error);
     });
-// Innovation 3
+// Innovation 4
 leadership.create({
-    title: 'Zappos CEO Is Stepping Down, A Year After Tony Hsieh’s Death',
-    author: 'Angel Au-Yeung and David Jeans',
-    date: 'November 30, 2021',
+    title: 'From Bella Poarch To A ‘Bridgerton’ Musical, Meet Forbes’ 30 Under 30 In Social Media',
+    author: 'Abram Brown',
+    date: 'December 1, 2021',
     job: 'Forbes Staff',
 })
     .then(function (createdInnovation) {
-        console.log('Innovation Article #3', createdInnovation);
+        console.log('Innovation Article #4', createdInnovation);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Innovation Article', error);
+    });
+// Innovation 5
+leadership.create({
+    title: '30 Under 30 Manufacturing & Industry 2022: Meet The Young Innovators Building The New World',
+    author: 'Amy Feldman',
+    date: 'December 1, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdInnovation) {
+        console.log('Innovation Article #5', createdInnovation);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Innovation Article', error);
+    });
+// Innovation 6
+leadership.create({
+    title: '30 Under 30 Venture Capital 2022: Meet The New Wave Of Investors Backing Builders From Crypto To Cancer Research',
+    author: 'Alex Konrad and Rebecca Szkutak',
+    date: 'December 1, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdInnovation) {
+        console.log('Innovation Article #6', createdInnovation);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Innovation Article', error);
+    });
+// Innovation 7
+leadership.create({
+    title: 'How Banks Can Take Control Of Trade Expense',
+    author: 'Alexander Duggan',
+    date: 'October 28, 2021',
+    job: 'Brand Contributor',
+})
+    .then(function (createdInnovation) {
+        console.log('Innovation Article #7', createdInnovation);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Innovation Article', error);
+    });
+// Innovation 8
+leadership.create({
+    title: '30 Under 30 In Healthcare 2022: Boosting Equity Through Activism, Big Data And Automation',
+    author: 'Katie Jennings and Alex Knapp',
+    date: 'December 1, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdInnovation) {
+        console.log('Innovation Article #8', createdInnovation);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Innovation Article', error);
+    });
+// Innovation 9
+leadership.create({
+    title: '30 Under 30 In Science 2022: Finding New Worlds, Communicating STEM And Helping Dogs Live Longer',
+    author: 'Alex Knapp and Katie Jennings',
+    date: 'December 1, 2021',
+    job: 'Forbes Staff',
+})
+    .then(function (createdInnovation) {
+        console.log('Innovation Article #9', createdInnovation);
+    })
+    .catch(function (err) {
+        console.log('ERROR with adding new Innovation Article', error);
+    });
+// Innovation 10
+leadership.create({
+    title: 'NVIDIA Again Claims The Title For The Fastest AI; Competitors Disagree',
+    author: 'Karl Freund',
+    date: 'December 1, 2021',
+    job: 'Contributor',
+})
+    .then(function (createdInnovation) {
+        console.log('Innovation Article #10', createdInnovation);
     })
     .catch(function (err) {
         console.log('ERROR with adding new Innovation Article', error);
