@@ -451,6 +451,69 @@ innovation.findAll()
             }
         }
     })
+// findOne Money
+money.findOne({
+    where: { title: 'Little Lions: America’s Top 100 Small-Cap Stocks For 2022' }
+}).then(function (foundMoney) {
+    console.log('FOUND MONEY ARTICLE', foundMoney)
+});
+money.findOne({
+    where: { date: 'November 30, 2021' }
+}).then(function (foundMoney) {
+    console.log('FOUND MONEY ARTICLE', foundMoney)
+});
+money.findOne({
+    where: { job: 'Senior Contributor' }
+}).then(function (foundMoney) {
+    console.log('FOUND MONEY ARTICLE', foundMoney)
+});
+// findOne Leadership
+leadership.findOne({
+    where: { title: 'Chobani Is Going Public. Its ‘Anti-CEO’ Founder Won’t Be The Only Employee Who Could See A Big Payday' }
+}).then(function (foundLeadership) {
+    console.log('FOUND LEADERSHIP ARTICLE', foundLeadership)
+});
+leadership.findOne({
+    where: { date: 'November 19, 2021' }
+}).then(function (foundLeadership) {
+    console.log('FOUND LEADERSHIP ARTICLE', foundLeadership)
+});
+leadership.findOne({
+    where: { job: 'Brand Contributor' }
+}).then(function (foundLeadership) {
+    console.log('FOUND LEADERSHIP ARTICLE', foundLeadership)
+});
+// findOne Innovation
+innovation.findOne({
+    where: { title: 'Zappos CEO Is Stepping Down, A Year After Tony Hsieh’s Death' }
+}).then(function (foundInnovation) {
+    console.log('FOUND INNOVATION ARTICLE', foundInnovation)
+});
+innovation.findOne({
+    where: { date: 'November 30, 2021' }
+}).then(function (foundInnovation) {
+    console.log('FOUND INNOVATION ARTICLE', foundInnovation)
+});
+innovation.findOne({
+    where: { job: 'Contributor' }
+}).then(function (foundInnovation) {
+    console.log('FOUND INNOVATION ARTICLE', foundInnovation)
+});
+// findByPk Money
+money.findByPk(1)
+    .then(function (moneyPk) {
+        console.log('FOUND MONEY PK ', moneyPk);
+    })
+// findByPk Leadership
+leadership.findByPk(17)
+    .then(function (leadershipPk) {
+        console.log('FOUND LEADERSHIP PK ', leadershipPk);
+    })
+// findByPk Innovation
+innovation.findByPk(24)
+    .then(function (innovationPk) {
+        console.log('FOUND INNOVATION PK ', innovationPk);
+    })
 /************************************************************/
 // [U]pdate
 /************************************************************/
