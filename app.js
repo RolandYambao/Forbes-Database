@@ -516,6 +516,96 @@ innovation.findByPk(24)
     })
 /************************************************************/
 // [U]pdate
+// update Money
+money.update({
+    title: 'Crypto Nonsense'
+}, {
+    where: {
+        title: 'Inside Coinbase’s Budding Plan To Become The AWS Of Crypto'
+    }
+}).then(function (moneyChanged) {
+    console.log('UPDATED MONEY ARTICLE TITLE', moneyChanged)
+});
+money.update({
+    title: 'Sales Tax Stuff'
+}, {
+    where: {
+        title: 'Sales Taxes In 2022 — Issues To Watch For Online Retailers'
+    }
+}).then(function (moneyChanged) {
+    console.log('UPDATED MONEY ARTICLE TITLE', moneyChanged)
+});
+// update Leadership
+leadership.update({
+    title: 'Comrade-CEO Elon Musk Upholds Stalinism'
+}, {
+    where: {
+        title: 'Elon Musk Shares Bizarre Stalin Meme Commemorating Twitter CEO Change'
+    }
+}).then(function (leadershipChanged) {
+    console.log('UPDATED LEADERSHIP ARTICLE TITLE', leadershipChanged)
+});
+leadership.update({
+    title: 'The Empire, Long Divided Must Unite, Long United Must Divide'
+}, {
+    where: {
+        title: 'Ray Dalio Says America’s Decline Will Upend Lives, Not Just Portfolios'
+    }
+}).then(function (leadershipChanged) {
+    console.log('UPDATED LEADERSHIP ARTICLE TITLE', leadershipChanged)
+});
+// update Innovation
+innovation.update({
+    title: 'Banks do What they Always Do'
+}, {
+    where: {
+        title: 'How Banks Can Take Control Of Trade Expense'
+    }
+}).then(function (innovationChanged) {
+    console.log('UPDATED INNOVATION ARTICLE TITLE', innovationChanged)
+});
+innovation.update({
+    title: 'NVIDIA Worships the Omnissiah'
+}, {
+    where: {
+        title: 'NVIDIA Again Claims The Title For The Fastest AI; Competitors Disagree'
+    }
+}).then(function (innovationChanged) {
+    console.log('UPDATED INNOVATION ARTICLE TITLE', innovationChanged)
+});
 /************************************************************/
 // [D]elete
+// destroy Money
+money.destroy({
+    where: {
+        title: 'The Richest Private Equity Billionaires On The Forbes 400 List 2021',
+        author: 'Sergei Klebnikov',
+        date: 'October 5, 2021',
+        job: 'Forbes Staff',
+    }
+}).then(function (moneyDeleted) {
+    console.log('DELETED MONEY ARTICLE', moneyDeleted)
+});
+// destroy Leadership
+leadership.destroy({
+    where: {
+        title: 'The Wisdom Of Women Leaders As They Forge The Post Pandemic Future',
+        author: 'Alaina Percival',
+        date: 'December 1, 2021',
+        job: 'Contributor',
+    }
+}).then(function (leadershipDeleted) {
+    console.log('DELETED LEADERSHIP ARTICLE', leadershipDeleted)
+});
+// destroy Innovation
+innovation.destroy({
+    where: {
+        title: '30 Under 30 Venture Capital 2022: Meet The New Wave Of Investors Backing Builders From Crypto To Cancer Research',
+        author: 'Alex Konrad and Rebecca Szkutak',
+        date: 'December 1, 2021',
+        job: 'Forbes Staff',
+    }
+}).then(function (innovationDeleted) {
+    console.log('DELETED INNOVATION ARTICLE', innovationDeleted)
+});
 /************************************************************/
