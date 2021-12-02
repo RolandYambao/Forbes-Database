@@ -1,6 +1,7 @@
 const { money } = require('./models');
 const { leadership } = require('./models');
 const { innovation } = require('./models');
+const comments = require('./models/comments');
 
 // Implement CRUD
 
@@ -609,3 +610,22 @@ innovation.destroy({
     console.log('DELETED INNOVATION ARTICLE', innovationDeleted)
 });
 /************************************************************/
+
+money.findOn({
+    where: { title: 'We All Pay For Retirement Tax Breaks That Mostly The Wealthy Use' }
+})
+    .then(function (moneyFound) {
+        console.log('FOUND MONEY ARTICLE', moneyFound);
+        comments.findOne({
+            where: { content: 'This is dumb' }
+        })
+            .then(function (commentFound) {
+                console.log('FOUND COMMNET', commentFound)
+            })
+            .catch(function (err) {
+                console.log('ERROR', err);
+            })
+    })
+    .catch(function (err) {
+        console.log('ERROR', err);
+    })
