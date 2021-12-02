@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      models.leadership.hasMany(models.comments);
+      models.leadership.hasMany(models.comments, { foreignKey: 'articleId' });
     }
   };
   leadership.init({
