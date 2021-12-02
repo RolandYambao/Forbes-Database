@@ -18,6 +18,12 @@ module.exports = {
         type: Sequelize.STRING
       },
       createdAt: {
+        type: Sequelize.STRING
+      },
+      articleId: {
+        type: Sequelize.INTEGER
+      },
+      createdAt: {
         allowNull: false,
         type: Sequelize.DATE
       },
