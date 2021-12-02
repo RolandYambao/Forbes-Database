@@ -620,7 +620,7 @@ money.findOn({
             where: { content: 'This is dumb' }
         })
             .then(function (commentFound) {
-                console.log('FOUND COMMNET', commentFound)
+                console.log('FOUND COMMENT', commentFound)
             })
             .catch(function (err) {
                 console.log('ERROR', err);
