@@ -620,12 +620,14 @@ money.findOn({
             where: { content: 'This is dumb' }
         })
             .then(function (commentFound) {
-                console.log('FOUND COMMENT', commentFound)
+                console.log('FOUND COMMENT', commentFound);
+                money.addcomments(comments); // articleId will get added to the comments
+                money.save();
             })
             .catch(function (err) {
                 console.log('ERROR', err);
-            })
+            });
     })
     .catch(function (err) {
         console.log('ERROR', err);
-    })
+    });
